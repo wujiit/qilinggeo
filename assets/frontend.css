@@ -1,0 +1,191 @@
+.qigeo-insights-block {
+    margin-top: 28px;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--color-gray-200, #e2e8f0);
+    background: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 8px 20px -4px rgba(15, 23, 42, 0.06);
+}
+
+.qigeo-insights-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed var(--color-gray-300, #d1d5db);
+}
+
+.qigeo-insights-title {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.2;
+    color: var(--color-gray-900, #111827);
+}
+
+.qigeo-insights-badge {
+    display: inline-flex;
+    align-items: center;
+    height: 26px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background: var(--color-accent, #0284c7);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+}
+
+.qigeo-summary-panel,
+.qigeo-faq-panel {
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.78);
+    padding: 14px 14px 12px;
+}
+
+.qigeo-faq-panel {
+    margin-top: 12px;
+}
+
+.qigeo-key-panel {
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.78);
+    padding: 14px 14px 12px;
+    margin-top: 12px;
+}
+
+.qigeo-panel-title {
+    margin: 0 0 10px;
+    color: var(--color-dark, #1f2937);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.qigeo-summary-text {
+    margin: 0;
+    color: var(--color-gray-600, #4b5563);
+    line-height: 1.85;
+}
+
+.qigeo-faq-list {
+    display: grid;
+    gap: 10px;
+}
+
+.qigeo-key-points {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--color-gray-600, #4b5563);
+    line-height: 1.8;
+}
+
+.qigeo-key-points li {
+    margin-bottom: 6px;
+}
+
+.qigeo-entity-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.qigeo-entity-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 9px;
+    border-radius: 999px;
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    background: #fff;
+    color: var(--color-gray-600, #4b5563);
+    font-size: 12px;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.qigeo-entity-tag:hover {
+    border-color: #0284c7;
+    color: #0284c7;
+}
+
+.qigeo-faq-item {
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.qigeo-faq-question {
+    cursor: pointer;
+    list-style: none;
+    padding: 12px 14px;
+    font-weight: 600;
+    color: var(--color-dark, #1f2937);
+    transition: color 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.qigeo-faq-question:hover {
+    color: #0284c7;
+}
+
+.qigeo-faq-question:focus-visible {
+    outline: 2px solid #0284c7;
+    outline-offset: -2px;
+}
+
+.qigeo-faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.qigeo-faq-answer {
+    padding: 0 14px 12px;
+    color: var(--color-gray-600, #4b5563);
+    line-height: 1.8;
+}
+
+[data-theme="dark"] .qigeo-insights-block {
+    border-color: var(--dark-border, #334155);
+    background: var(--dark-bg-secondary, #1e293b);
+    box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .qigeo-insights-title,
+[data-theme="dark"] .qigeo-panel-title,
+[data-theme="dark"] .qigeo-faq-question {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .qigeo-summary-panel,
+[data-theme="dark"] .qigeo-key-panel,
+[data-theme="dark"] .qigeo-faq-panel,
+[data-theme="dark"] .qigeo-faq-item {
+    border-color: var(--dark-border, #334155);
+    background: rgba(15, 23, 42, 0.55);
+}
+
+[data-theme="dark"] .qigeo-summary-text,
+[data-theme="dark"] .qigeo-key-points,
+[data-theme="dark"] .qigeo-faq-answer {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .qigeo-entity-tag {
+    border-color: var(--dark-border, #334155);
+    background: rgba(15, 23, 42, 0.6);
+    color: #cbd5e1;
+}
+
+@media (max-width: 767px) {
+    .qigeo-insights-block {
+        padding: 16px;
+        border-radius: 14px;
+        margin-top: 22px;
+    }
+
+    .qigeo-insights-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
